@@ -1,386 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SecurTrack | Web Tracking Agent</title>
-    <meta
-      name="description"
-      content="SecurTrack is a webtracking agent that monitors the internet for signs of risk, exposure, and emerging threats in real time."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="container nav">
-          <a href="#" class="brand" aria-label="SecurTrack homepage">
-            <span class="brand-mark">S</span>
-            <span>SecurTrack</span>
-          </a>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-          <nav class="nav-links" aria-label="Main navigation">
-            <a href="#platform">Platform</a>
-            <a href="#features">Features</a>
-            <a href="#workflow">Workflow</a>
-            <a href="#insights">Insights</a>
-          </nav>
+<title>SecurTrack</title>
 
-          <div class="nav-actions">
-            <a href="#" class="link-button">Log in</a>
-            <a href="#" class="primary-button">Book demo</a>
-          </div>
-        </div>
-      </header>
+<style>
 
-      <main>
-        <section class="hero">
-          <div class="container hero-grid">
-            <div class="hero-copy">
-              <div class="pill">Autonomous webtracking agent</div>
-              <h1>Track what matters across the web before the risk becomes visible.</h1>
-              <p>
-                SecurTrack is a webtracking agent built to monitor public digital activity,
-                detect emerging threats, and surface actionable intelligence in real time.
-                It continuously watches the web so teams can act faster and with more confidence.
-              </p>
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:#ffffff;
+    color:#323130;
+}
 
-              <div class="cta-row">
-                <a href="#" class="primary-button">Request demo</a>
-                <a href="#" class="secondary-button">See platform</a>
-              </div>
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 32px;
+}
 
-              <div class="hero-metrics">
-                <div>
-                  <strong>24/7</strong>
-                  <span>Global monitoring</span>
-                </div>
-                <div>
-                  <strong>1.3M+</strong>
-                  <span>Signals tracked</span>
-                </div>
-                <div>
-                  <strong>4.7x</strong>
-                  <span>Faster detection</span>
-                </div>
-              </div>
-            </div>
+h1{
+    font-size:54px;
+    margin:0;
+}
 
-            <div class="hero-visual" aria-label="SecurTrack monitoring dashboard preview">
-              <div class="status-card floating-card">
-                <span class="tiny-label">Threat pulse</span>
-                <strong>+42%</strong>
-                <small>vs. previous 7 days</small>
-              </div>
+p{
+    font-size:20px;
+    color:#605e5c;
+}
 
-              <div class="dashboard-card">
-                <div class="dashboard-header">
-                  <div class="traffic-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <div class="status-tag">LIVE</div>
-                </div>
+.button{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:#0078d4;
+    color:white;
+    text-decoration:none;
+    border-radius:4px;
+}
 
-                <div class="signal-list">
-                  <div class="signal-row">
-                    <div class="signal-left">
-                      <span class="signal-dot green"></span>
-                      <div>
-                        <h4>Domain exposure</h4>
-                        <small>Public surface changes</small>
-                      </div>
-                    </div>
-                    <span class="signal-value green">92%</span>
-                  </div>
+.button:hover{
+    background:#106ebe;
+}
 
-                  <div class="signal-row">
-                    <div class="signal-left">
-                      <span class="signal-dot amber"></span>
-                      <div>
-                        <h4>Risk drift</h4>
-                        <small>Brand and asset signals</small>
-                      </div>
-                    </div>
-                    <span class="signal-value amber">+18%</span>
-                  </div>
+</style>
+</head>
 
-                  <div class="signal-row">
-                    <div class="signal-left">
-                      <span class="signal-dot purple"></span>
-                      <div>
-                        <h4>Web mentions</h4>
-                        <small>Emerging narratives</small>
-                      </div>
-                    </div>
-                    <span class="signal-value purple">3.4k</span>
-                  </div>
-                </div>
+<body>
 
-                <div class="chart-panel">
-                  <svg viewBox="0 0 420 140" preserveAspectRatio="none" aria-hidden="true">
-                    <defs>
-                      <linearGradient id="wave" x1="0" x2="1">
-                        <stop offset="0%" stop-color="#6EE7F9" />
-                        <stop offset="100%" stop-color="#8B5CF6" />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      d="M0,92 C25,78 52,95 87,68 S150,18 190,45 S252,80 300,52 S356,15 420,28 L420,140 L0,140 Z"
-                      fill="rgba(110, 231, 249, 0.11)"
-                    />
-                    <path
-                      d="M0,92 C25,78 52,95 87,68 S150,18 190,45 S252,80 300,52 S356,15 420,28"
-                      fill="none"
-                      stroke="url(#wave)"
-                      stroke-width="4"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+<div class="container">
 
-        <section class="platform" id="platform">
-          <div class="container narrow">
-            <div class="section-header">
-              <div class="mini-pill">What SecurTrack does</div>
-              <h2>Web tracking for visibility, signal detection, and faster response.</h2>
-              <p>
-                The system continuously scans the internet, follows changing digital signals,
-                and turns noisy online activity into actionable intelligence your team can act on.
-              </p>
-            </div>
-          </div>
-        </section>
+<h1>SecurTrack</h1>
 
-        <section class="features" id="features">
-          <div class="container feature-grid">
-            <article class="feature-card">
-              <div class="icon-box">◎</div>
-              <h3>Continuous monitoring</h3>
-              <p>
-                Observe websites, digital surfaces, and evolving online activity in real time,
-                without gaps or blind spots.
-              </p>
-            </article>
+<p>
+Modern website filtering and monitoring.
+</p>
 
-            <article class="feature-card">
-              <div class="icon-box">⚡</div>
-              <h3>Automated detection</h3>
-              <p>
-                Catch emerging changes, suspicious signals, and critical shifts before they become
-                operational or reputational issues.
-              </p>
-            </article>
+#
+Download Extension
+</a>
 
-            <article class="feature-card">
-              <div class="icon-box">🧠</div>
-              <h3>Context-rich analysis</h3>
-              <p>
-                Correlate related signals to uncover patterns, anomalies, and the context behind each
-                digital event.
-              </p>
-            </article>
-          </div>
-        </section>
+</div>
 
-        <section class="workflow" id="workflow">
-          <div class="container workflow-grid">
-            <div class="workflow-copy">
-              <div class="section-header left-align">
-                <div class="mini-pill">How it works</div>
-                <h2>From raw web activity to decisive action.</h2>
-              </div>
-
-              <div class="steps">
-                <div class="step-item">
-                  <div class="step-number">1</div>
-                  <div>
-                    <h4>Discover</h4>
-                    <p>Identify the domains, targets, and digital surfaces relevant to your monitoring goals.</p>
-                  </div>
-                </div>
-
-                <div class="step-item">
-                  <div class="step-number">2</div>
-                  <div>
-                    <h4>Track</h4>
-                    <p>Continuously monitor relevant online movement, modifications, and emerging patterns.</p>
-                  </div>
-                </div>
-
-                <div class="step-item">
-                  <div class="step-number">3</div>
-                  <div>
-                    <h4>Prioritize</h4>
-                    <p>Analyze risk signals and identify what matters most before issues escalate.</p>
-                  </div>
-                </div>
-
-                <div class="step-item">
-                  <div class="step-number">4</div>
-                  <div>
-                    <h4>Respond</h4>
-                    <p>Deliver actionable alerts so teams can respond quickly and with confidence.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="intel-panel">
-              <div class="panel-kicker">Monitoring stack</div>
-              <div class="stack-list">
-                <div class="stack-item">
-                  <span>Web signal collection</span>
-                  <em>Live</em>
-                </div>
-                <div class="stack-item">
-                  <span>Pattern correlation</span>
-                  <em>AI</em>
-                </div>
-                <div class="stack-item">
-                  <span>Risk scoring</span>
-                  <em>Priority</em>
-                </div>
-                <div class="stack-item">
-                  <span>Incident escalation</span>
-                  <em>Alerting</em>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="insights" id="insights">
-          <div class="container">
-            <div class="section-header center">
-              <div class="mini-pill">Why teams choose SecurTrack</div>
-              <h2>Purpose-built for modern digital risk and web intelligence.</h2>
-              <p>
-                SecurTrack turns digital noise into a clear operational picture, helping teams see,
-                interpret, and act on changes across the web with speed and precision.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <div class="container">
-          <div class="cta-card">
-            <h3>Turn online visibility into action.</h3>
-            <p>
-              SecurTrack helps security, intelligence, and operations teams monitor the web with
-              precision and respond faster to emerging digital risk.
-            </p>
-
-            <div class="cta-row justify-center">
-              <a href="#" class="primary-button">Book a strategy call</a>
-              <a href="#" class="secondary-button">Speak with sales</a>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <footer class="footer">
-        <div class="container footer-inner">
-          <div class="brand-footer">
-            <span class="brand-mark">S</span>
-            <span>SecurTrack</span>
-          </div>
-          <p>Webtracking agent for digital intelligence.</p>
-        </div>
-      </footer>
-    </div>
-  </body>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
